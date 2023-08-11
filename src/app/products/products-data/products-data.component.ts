@@ -10,14 +10,14 @@ export class ProductsDataComponent {
   constructor(public productList : productService){
 
   }
-  newProducts: any = [];
+
   update(index:any){
-    this.newProducts.push(this.productList.products[index]);
+    this.productList.newProduct.push(this.productList.products[index]);
     this.productList.products.splice(index,1)
   }
   updateAgain(index:any){
-    this.productList.products.push(this.newProducts[index])
-    this.newProducts.splice(index,1)
+    this.productList.products.push(this.productList.newProduct[index])
+    this.productList.newProduct.splice(index,1)
   }
   
 }

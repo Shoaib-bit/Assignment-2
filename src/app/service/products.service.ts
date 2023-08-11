@@ -55,5 +55,6 @@ export class productService {
         rating : 4.6
     }
   ]
+  newProduct : any= [];
   constructor() { }
 }

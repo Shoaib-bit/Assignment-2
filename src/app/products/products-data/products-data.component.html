@@ -8,7 +8,7 @@
         </ul>
     </div>
     <div class="right-div">
-        <ul *ngFor="let temp of newProducts,let i = index">
+        <ul *ngFor="let temp of productList.newProduct,let i = index">
             <li (click)="updateAgain(i)">{{temp.name}} <span>rating : {{temp.rating}}</span></li>
         </ul>
     </div>
