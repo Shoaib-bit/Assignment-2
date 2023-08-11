@@ -1,0 +1,21 @@
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let temp of employee.users" >
+                <td *ngIf="temp.address != null">{{temp.id}}</td>
+                <td *ngIf="temp.address != null">{{temp.name}}</td>
+                <td *ngIf="temp.address != null">{{temp.email}}</td>
+                <td *ngIf="temp.address != null">{{temp.address.city}}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>

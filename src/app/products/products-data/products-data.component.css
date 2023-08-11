@@ -1,0 +1,26 @@
+.container{
+    width: 100%;
+    height: calc(100vh- 100px);
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    align-items: center;
+    margin-top: 10px;
+}
+.container div{
+    border: 1px solid black;
+    width: 350px;
+    height: 500px;
+
+}
+ul li{
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+   
+}
+span{
+    font-size: 12px;
+}

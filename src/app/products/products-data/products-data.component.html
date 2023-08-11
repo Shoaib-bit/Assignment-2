@@ -1,0 +1,15 @@
+
+
+
+<div class="container">
+    <div class="left-div">
+        <ul *ngFor="let temp of productList.products,let i = index">
+            <li *ngIf = "temp.rating > 4.5" (click)="update(i)">{{temp.name}} <span>rating : {{temp.rating}}</span></li>
+        </ul>
+    </div>
+    <div class="right-div">
+        <ul *ngFor="let temp of newProducts,let i = index">
+            <li (click)="updateAgain(i)">{{temp.name}} <span>rating : {{temp.rating}}</span></li>
+        </ul>
+    </div>
+</div>
